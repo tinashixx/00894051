@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
@@ -99,6 +100,8 @@ local.properties
 *_REMOTE_*.txt
 
 ### Java ###
+=======
+>>>>>>> origin/main
 # Compiled class file
 *.class
 
@@ -122,6 +125,7 @@ local.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 
 ### Maven ###
 target/
