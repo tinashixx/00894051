@@ -1,10 +1,10 @@
-package com.bezkoder.spring.files.excel;
+package com.cathay.spring.files;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootUploadExcelFilesApplicationTests {
+class GaasprojectUploadFilesApplicationTests {
 
 	@Test
 	void contextLoads() {

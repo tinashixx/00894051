@@ -1,8 +1,8 @@
-package com.bezkoder.spring.files.excel.repository;
+package com.cathay.spring.files.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.bezkoder.spring.files.excel.model.Tutorial;
+import com.cathay.spring.files.entity.MyEntity;
 
-public interface TutorialRepository extends JpaRepository<Tutorial, Long> {
+public interface MyRepository extends JpaRepository<MyEntity, Long> {
 }
