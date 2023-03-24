@@ -52,7 +52,7 @@ public class UploadFileController {
 	@GetMapping("/list")
 	public ResponseEntity<List<MyEntity>> getAllList() {
 		try {
-			List<MyEntity> list = fileService.getAllTutorials();
+			List<MyEntity> list = fileService.getAll();
 
 			if (list.isEmpty()) {
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);

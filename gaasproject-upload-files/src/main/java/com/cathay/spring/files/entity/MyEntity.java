@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tutorials")
+@Table(name = "test_data")
 public class MyEntity {
 
 	@Id
@@ -19,17 +19,17 @@ public class MyEntity {
 	@Column(name = "description")
 	private String description;
 
-	@Column(name = "published")
-	private boolean published;
+	@Column(name = "checked")
+	private boolean checked;
 
 	public MyEntity() {
 
 	}
 
-	public MyEntity(String title, String description, boolean published) {
+	public MyEntity(String title, String description, boolean checked) {
 		this.title = title;
 		this.description = description;
-		this.published = published;
+		this.checked = checked;
 	}
 
 	public long getId() {
@@ -56,17 +56,17 @@ public class MyEntity {
 		this.description = description;
 	}
 
-	public boolean isPublished() {
-		return published;
+	public boolean checked() {
+		return checked;
 	}
 
-	public void setPublished(boolean isPublished) {
-		this.published = isPublished;
+	public void setchecked(boolean ischecked) {
+		this.checked = ischecked;
 	}
 
 	@Override
 	public String toString() {
-		return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published + "]";
+		return "data [id=" + id + ", title=" + title + ", desc=" + description + ", checked=" + checked + "]";
 	}
 
 }

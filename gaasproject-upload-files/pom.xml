@@ -9,11 +9,11 @@
 		<version>2.2.7.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bezkoder</groupId>
-	<artifactId>spring-boot-upload-excel-files</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-upload-excel-files</name>
-	<description>Spring Boot upload/download excel files example</description>
+	<groupId>com.cathay.spring</groupId>
+	<artifactId>gassproject-upload-files</artifactId>
+	<version>1.0</version>
+	<name>gassproject-upload-files</name>
+	<description>Spring Boot upload files example</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

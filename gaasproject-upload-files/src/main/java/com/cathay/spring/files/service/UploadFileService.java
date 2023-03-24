@@ -1,6 +1,5 @@
 package com.cathay.spring.files.service;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -26,7 +25,7 @@ public class UploadFileService {
 		}
 	}
 
-	public List<MyEntity> getAllTutorials() {
+	public List<MyEntity> getAll() {
 		return repository.findAll();
 	}
 }
