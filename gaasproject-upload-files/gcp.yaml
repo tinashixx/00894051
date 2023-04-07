@@ -1,0 +1,32 @@
+apiVersion: gass/v1
+kind: Deployment
+metadata:
+  name: my-gass
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-gass
+  template:
+    metadata:
+      labels:
+        app: my-gass
+    spec:
+      containers:
+      - name: my-gass
+        image: gcr.io/elite-cascade-381902/gassproject:v1
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-gass
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-gass
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
