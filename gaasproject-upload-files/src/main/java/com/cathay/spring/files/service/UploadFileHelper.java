@@ -48,7 +48,6 @@ public class UploadFileHelper {
 					entity.setId(Long.parseLong(columns[0]));
 					entity.setTitle(columns[1]);
 					entity.setDescription(columns[2]);
-					entity.setchecked(Boolean.parseBoolean(columns[3]));
 
 					entities.add(entity);
 				}
@@ -90,10 +89,6 @@ public class UploadFileHelper {
 
 						case 2:
 							entity.setDescription(currentCell.getStringCellValue());
-							break;
-
-						case 3:
-							entity.setchecked(currentCell.getBooleanCellValue());
 							break;
 
 						default:

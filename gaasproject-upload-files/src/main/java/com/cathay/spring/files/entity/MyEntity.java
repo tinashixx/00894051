@@ -19,9 +19,6 @@ public class MyEntity {
 	@Column(name = "description")
 	private String description;
 
-	@Column(name = "checked")
-	private boolean checked;
-
 	public MyEntity() {
 
 	}
@@ -29,7 +26,6 @@ public class MyEntity {
 	public MyEntity(String title, String description, boolean checked) {
 		this.title = title;
 		this.description = description;
-		this.checked = checked;
 	}
 
 	public long getId() {
@@ -56,17 +52,10 @@ public class MyEntity {
 		this.description = description;
 	}
 
-	public boolean checked() {
-		return checked;
-	}
-
-	public void setchecked(boolean ischecked) {
-		this.checked = ischecked;
-	}
 
 	@Override
 	public String toString() {
-		return "data [id=" + id + ", title=" + title + ", desc=" + description + ", checked=" + checked + "]";
+		return "data [id=" + id + ", title=" + title + ", desc=" + description + "]";
 	}
 
 }
